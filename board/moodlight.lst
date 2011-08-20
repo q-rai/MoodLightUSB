@@ -1,0 +1,46 @@
+eeschema (2011-07-08)-stable  >> Creation date: Mo 25 Jul 2011 11:18:29 CEST
+
+#Cmp ( Sortiert nach Wert )
+| 0u1          C1        
+| 0u1          C2        
+| 0u1          C5        
+| 100          R8        
+| 100          R9        
+| 100          R10       
+| 100          R11       
+| 100          R12       
+| 100          R13       
+| 100          R14       
+| 100          R15       
+| 100          R16       
+| 100          R17       
+| 100          R18       
+| 100          R19       
+| 16MHz        X1        
+| 18p          C3        
+| 18p          C7        
+| 1k           R5        
+| 1k           R6        
+| 1k           R7        
+| 1u0          C4        
+| 22           R2        
+| 22           R3        
+| 47k          R1        
+| 47k          R4        
+| 4u7          C6        
+| AT90USB16    IC1       
+| BC847C       Q1        
+| BC847C       Q2        
+| BC847C       Q3        
+| ESD_Zener    CR1       
+| ESD_Zener    CR2       
+| LED_RCBG     LED1      
+| LED_RCBG     LED2      
+| LED_RCBG     LED3      
+| LED_RCBG     LED4      
+| SWITCH_PUSHBUTTON SW1       
+| SWITCH_PUSHBUTTON SW2       
+| USBCONN      U1        
+#Ende Cmp
+
+#Ende der Liste
