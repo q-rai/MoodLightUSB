@@ -97,6 +97,10 @@ void SetupHardware(void)
 	/* Hardware Initialization */
 	LEDs_Init();
 	USB_Init();
+        DDRB |= (1 << PB7);
+        DDRC |= (1 << PC6) | (1 << PC5);
+        TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<COM1C1) | (1<<WGM11) | (1<<WGM10); //10 bit fast-pwm
+        TCCR1B |= (1<<WGM12) | (0<<CS12) | (0<<CS11) | (1<<CS10); //clock/1 prescaler
 }
 
 /** Event handler for the library USB Connection event. */
@@ -160,6 +164,13 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 	return true;
 }
 
+void setRGB( uint8_t red, uint8_t green, uint8_t blue )
+{
+    OCR1A = blue;
+    OCR1B = green;
+    OCR1C = red;        
+}
+
 /** HID class driver callback function for the processing of HID reports from the host.
  *
  *  \param[in] HIDInterfaceInfo  Pointer to the HID class interface configuration structure being referenced
@@ -177,5 +188,7 @@ void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDI
 	HIDReportEcho.ReportID   = ReportID;
 	HIDReportEcho.ReportSize = ReportSize;
 	memcpy(HIDReportEcho.ReportData, ReportData, ReportSize);
+        setRGB(HIDReportEcho.ReportData[0],HIDReportEcho.ReportData[1],HIDReportEcho.ReportData[2]);
 }
+
 
