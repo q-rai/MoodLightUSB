@@ -1,0 +1,66 @@
+   1               		.file	"Device_AVR8.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__ = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.USB_Device_SendRemoteWakeup,"ax",@progbits
+  17               	.global	USB_Device_SendRemoteWakeup
+  19               	USB_Device_SendRemoteWakeup:
+  20               	.LFB78:
+  21               	.LSM0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	/* stack size = 0 */
+  25               	.L__stack_usage = 0
+  26               	.LBB8:
+  27               	.LBB9:
+  28               	.LSM1:
+  29 0000 84E0      		ldi r24,lo8(4)
+  30 0002 89BD      		out 73-32,r24
+  31               	.LSM2:
+  32 0004 89B5      		in r24,73-32
+  33 0006 8260      		ori r24,lo8(2)
+  34 0008 89BD      		out 73-32,r24
+  35               	.L2:
+  36               	.LBE9:
+  37               	.LBE8:
+  38               	.LSM3:
+  39 000a 09B4      		in __tmp_reg__,73-32
+  40 000c 00FE      		sbrs __tmp_reg__,0
+  41 000e 00C0      		rjmp .L2
+  42               	.LBB10:
+  43               	.LBB11:
+  44               	.LSM4:
+  45 0010 8091 D800 		lds r24,216
+  46 0014 8F7D      		andi r24,lo8(-33)
+  47 0016 8093 D800 		sts 216,r24
+  48               	.LBE11:
+  49               	.LBE10:
+  50               	.LSM5:
+  51 001a 8091 E000 		lds r24,224
+  52 001e 8260      		ori r24,lo8(2)
+  53 0020 8093 E000 		sts 224,r24
+  54               	.L3:
+  55               	.LSM6:
+  56 0024 8091 E000 		lds r24,224
+  57 0028 81FD      		sbrc r24,1
+  58 002a 00C0      		rjmp .L3
+  59               	/* epilogue start */
+  60               	.LSM7:
+  61 002c 0895      		ret
+  62               	.LFE78:
+  88               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Device_AVR8.c
+     /tmp/ccupPcQM.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccupPcQM.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccupPcQM.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccupPcQM.s:5      *ABS*:00000034 __CCP__
+     /tmp/ccupPcQM.s:6      *ABS*:00000000 __tmp_reg__
+     /tmp/ccupPcQM.s:7      *ABS*:00000001 __zero_reg__
+     /tmp/ccupPcQM.s:19     .text.USB_Device_SendRemoteWakeup:00000000 USB_Device_SendRemoteWakeup
+
+NO UNDEFINED SYMBOLS

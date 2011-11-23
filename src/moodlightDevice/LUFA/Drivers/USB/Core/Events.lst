@@ -1,0 +1,57 @@
+   1               		.file	"Events.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__ = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.USB_Event_Stub,"ax",@progbits
+  17               	.global	USB_Event_Stub
+  19               	USB_Event_Stub:
+  20               	.LFB15:
+  21               	.LSM0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	/* stack size = 0 */
+  25               	.L__stack_usage = 0
+  26               	/* epilogue start */
+  27               	.LSM1:
+  28 0000 0895      		ret
+  29               	.LFE15:
+  31               		.weak	EVENT_USB_Device_Connect
+  32               		.set	EVENT_USB_Device_Connect,USB_Event_Stub
+  33               		.weak	EVENT_USB_Device_Disconnect
+  34               		.set	EVENT_USB_Device_Disconnect,USB_Event_Stub
+  35               		.weak	EVENT_USB_Device_ControlRequest
+  36               		.set	EVENT_USB_Device_ControlRequest,USB_Event_Stub
+  37               		.weak	EVENT_USB_Device_ConfigurationChanged
+  38               		.set	EVENT_USB_Device_ConfigurationChanged,USB_Event_Stub
+  39               		.weak	EVENT_USB_Device_Suspend
+  40               		.set	EVENT_USB_Device_Suspend,USB_Event_Stub
+  41               		.weak	EVENT_USB_Device_WakeUp
+  42               		.set	EVENT_USB_Device_WakeUp,USB_Event_Stub
+  43               		.weak	EVENT_USB_Device_Reset
+  44               		.set	EVENT_USB_Device_Reset,USB_Event_Stub
+  45               		.weak	EVENT_USB_Device_StartOfFrame
+  46               		.set	EVENT_USB_Device_StartOfFrame,USB_Event_Stub
+  71               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Events.c
+     /tmp/ccgCArTp.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccgCArTp.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccgCArTp.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccgCArTp.s:5      *ABS*:00000034 __CCP__
+     /tmp/ccgCArTp.s:6      *ABS*:00000000 __tmp_reg__
+     /tmp/ccgCArTp.s:7      *ABS*:00000001 __zero_reg__
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 USB_Event_Stub
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Connect
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Disconnect
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ControlRequest
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ConfigurationChanged
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Suspend
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_WakeUp
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Reset
+     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_StartOfFrame
+
+NO UNDEFINED SYMBOLS
