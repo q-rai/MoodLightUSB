@@ -38,6 +38,7 @@
 
 /** Buffer to hold the previously generated HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevHIDReportBuffer[GENERIC_REPORT_SIZE];
+/** RGB colour codes */
 uint8_t red, green, blue;
 
 /** Structure to contain reports from the host, so that they can be echoed back upon request */
@@ -100,8 +101,8 @@ void SetupHardware(void)
 	USB_Init();
         DDRB |= (1 << PB7);
         DDRC |= (1 << PC6) | (1 << PC5);
-        TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<COM1C1) | (1<<WGM11) | (1<<WGM10); //10 bit fast-pwm
-        TCCR1B |= (1<<WGM12) | (0<<CS12) | (0<<CS11) | (1<<CS10); //clock/1 prescaler
+        TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<COM1C1) | (1<<WGM11) | (1<<WGM10); // 10 bit fast-pwm
+        TCCR1B |= (1<<WGM12) | (0<<CS12) | (0<<CS11) | (1<<CS10); // clock/1 prescaler
 }
 
 /** Event handler for the library USB Connection event. */
@@ -165,6 +166,12 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 	return true;
 }
 
+/**
+ * Set member variables for red, green, and blue light.
+ * \param[in] r red
+ * \param[in] g green
+ * \param[in] b blue
+ */
 void setRGB( uint8_t r, uint8_t g, uint8_t b )
 {
     red = r;
@@ -172,6 +179,9 @@ void setRGB( uint8_t r, uint8_t g, uint8_t b )
     blue = b;
 }
 
+/**
+ * Switch on light.
+ */
 void on()
 {
     OCR1A = blue;
@@ -179,6 +189,9 @@ void on()
     OCR1C = red;        
 }
 
+/**
+ * Switch off light.
+ */
 void off()
 {
     OCR1A = 0;
@@ -186,6 +199,10 @@ void off()
     OCR1C = 0;     
 }
 
+/**
+ * Blink (1 second on, 1 second off).
+ * \param[in] n number of times to blink
+ */
 void blink( uint8_t n )
 {
     for( uint8_t i = 0; i < n; i++ )
@@ -196,8 +213,58 @@ void blink( uint8_t n )
         _delay_ms(1000);
     }
 }
-
+/**
+ * Advanced fading taking into account how the colour is distributed.
+ * e.g. ff 00 33 fades evenly from black to pink.
+ * Replaces \ref fadeSimple().
+ *
+ * \param[in] n number of times to fade in and out
+ */
 void fade( uint8_t n )
+{
+    // use relative step sizes for each colour channel
+    int32_t rStep, gStep, bStep, scale;
+    scale = 48;
+    rStep = red / scale;
+    gStep = green / scale;
+    bStep = blue / scale;
+
+    // repeat n times
+    for( uint8_t i = 0; i < n; i++ )
+    {
+        // fade in to colour maximum
+        while( OCR1A < blue || OCR1B < green || OCR1C < red )
+        {
+            if( OCR1A < blue )
+                OCR1A += bStep;
+            if( OCR1B < green )
+                OCR1B += gStep; 
+            if( OCR1C < red )
+                OCR1C += rStep; 
+            _delay_ms(10);
+        }
+        // fade out to black
+        while( OCR1A > 0 || OCR1B > 0 || OCR1C > 0 )
+        {
+            if( OCR1A >= bStep )
+                OCR1A -= bStep;
+            if( OCR1B >= gStep )
+                OCR1B -= gStep;
+            if( OCR1C >= rStep )
+                OCR1C -= rStep;
+            _delay_ms(10);
+        }
+    }
+}
+
+/**
+ * Simple fading (constant increase/decrease of values, independent of colour distribution).
+ * Looks good, if all channels are equal or zero, but e.g. for ff 00 33, red and blue fade up 
+ * simultaneously until 33 00 33 is reached; afterwards, only red is increased up to ff 00 33.
+ *
+ * \param[in] n number of times to fade in and out
+ */
+void fadeSimple( uint8_t n )
 {
     for( uint8_t i = 0; i < n; i++ )
     {
@@ -230,7 +297,7 @@ void fade( uint8_t n )
  *  \param[in] ReportID    Report ID of the received report from the host
  *  \param[in] ReportType  The type of report that the host has sent, either HID_REPORT_ITEM_Out or HID_REPORT_ITEM_Feature
  *  \param[in] ReportData  Pointer to a buffer where the created report has been stored
- *  [0] = r, [1] = g, [2] = b; [3] = type (0 glow, 1 blink, 2 fade), [4] = duration (in seconds/number of blinks)
+ *  [0] = r, [1] = g, [2] = b; [3] = mode (0 glow, 1 blink, 2 fade), [4] = duration (in seconds/number of blinks)
  *  \param[in] ReportSize  Size in bytes of the received HID report
  */
 void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
@@ -263,5 +330,3 @@ void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDI
             break;
     }        
 }
-
-
