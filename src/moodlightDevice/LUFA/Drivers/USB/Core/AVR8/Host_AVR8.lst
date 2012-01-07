@@ -8,12 +8,12 @@
   15               	.Ltext0:
   16               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Host_AVR8.c
-     /tmp/ccASLKFZ.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccASLKFZ.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccASLKFZ.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccASLKFZ.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccASLKFZ.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccASLKFZ.s:7      *ABS*:00000001 __zero_reg__
+                            *ABS*:0000000000000000 Host_AVR8.c
+     /tmp/ccoRAMVm.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccoRAMVm.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccoRAMVm.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccoRAMVm.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccoRAMVm.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccoRAMVm.s:7      *ABS*:0000000000000001 __zero_reg__
 
 NO UNDEFINED SYMBOLS

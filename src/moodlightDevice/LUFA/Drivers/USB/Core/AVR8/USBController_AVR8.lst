@@ -204,16 +204,16 @@
  216               	.LFE78:
  258               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 USBController_AVR8.c
-     /tmp/cchsk6Q2.s:2      *ABS*:0000003f __SREG__
-     /tmp/cchsk6Q2.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cchsk6Q2.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cchsk6Q2.s:5      *ABS*:00000034 __CCP__
-     /tmp/cchsk6Q2.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/cchsk6Q2.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/cchsk6Q2.s:19     .text.USB_Disable:00000000 USB_Disable
-     /tmp/cchsk6Q2.s:76     .text.USB_ResetInterface:00000000 USB_ResetInterface
-     /tmp/cchsk6Q2.s:191    .text.USB_Init:00000000 USB_Init
+                            *ABS*:0000000000000000 USBController_AVR8.c
+     /tmp/ccyyhOzs.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccyyhOzs.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccyyhOzs.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccyyhOzs.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccyyhOzs.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccyyhOzs.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccyyhOzs.s:19     .text.USB_Disable:0000000000000000 USB_Disable
+     /tmp/ccyyhOzs.s:76     .text.USB_ResetInterface:0000000000000000 USB_ResetInterface
+     /tmp/ccyyhOzs.s:191    .text.USB_Init:0000000000000000 USB_Init
 
 UNDEFINED SYMBOLS
 USB_INT_DisableAllInterrupts

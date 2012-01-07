@@ -38,6 +38,7 @@
 
 /** Buffer to hold the previously generated HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevHIDReportBuffer[GENERIC_REPORT_SIZE];
+uint8_t red, green, blue;
 
 /** Structure to contain reports from the host, so that they can be echoed back upon request */
 static struct
@@ -164,11 +165,63 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 	return true;
 }
 
-void setRGB( uint8_t red, uint8_t green, uint8_t blue )
+void setRGB( uint8_t r, uint8_t g, uint8_t b )
+{
+    red = r;
+    green = g;
+    blue = b;
+}
+
+void on()
 {
     OCR1A = blue;
     OCR1B = green;
     OCR1C = red;        
+}
+
+void off()
+{
+    OCR1A = 0;
+    OCR1B = 0;
+    OCR1C = 0;     
+}
+
+void blink( uint8_t n )
+{
+    for( uint8_t i = 0; i < n; i++ )
+    {
+        on();      
+        _delay_ms(1000);
+        off();
+        _delay_ms(1000);
+    }
+}
+
+void fade( uint8_t n )
+{
+    for( uint8_t i = 0; i < n; i++ )
+    {
+        while( OCR1A < blue || OCR1B < green || OCR1C < red )
+        {
+            if( OCR1A < blue )
+                OCR1A++;
+            if( OCR1B < green )
+                OCR1B++; 
+            if( OCR1C < red )
+                OCR1C++; 
+            _delay_ms(10);
+        }
+        while( OCR1A > 0 || OCR1B > 0 || OCR1C > 0 )
+        {
+            if( OCR1A > 0 )
+                OCR1A--;
+            if( OCR1B > 0 )
+                OCR1B--;
+            if( OCR1C > 0 )
+                OCR1C--;
+            _delay_ms(10);
+        }
+    }
 }
 
 /** HID class driver callback function for the processing of HID reports from the host.
@@ -177,6 +230,7 @@ void setRGB( uint8_t red, uint8_t green, uint8_t blue )
  *  \param[in] ReportID    Report ID of the received report from the host
  *  \param[in] ReportType  The type of report that the host has sent, either HID_REPORT_ITEM_Out or HID_REPORT_ITEM_Feature
  *  \param[in] ReportData  Pointer to a buffer where the created report has been stored
+ *  [0] = r, [1] = g, [2] = b; [3] = type (0 glow, 1 blink, 2 fade), [4] = duration (in seconds/number of blinks)
  *  \param[in] ReportSize  Size in bytes of the received HID report
  */
 void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
@@ -185,10 +239,29 @@ void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDI
                                           const void* ReportData,
                                           const uint16_t ReportSize)
 {
-	HIDReportEcho.ReportID   = ReportID;
-	HIDReportEcho.ReportSize = ReportSize;
-	memcpy(HIDReportEcho.ReportData, ReportData, ReportSize);
-        setRGB(HIDReportEcho.ReportData[0],HIDReportEcho.ReportData[1],HIDReportEcho.ReportData[2]);
+    HIDReportEcho.ReportID   = ReportID;
+    HIDReportEcho.ReportSize = ReportSize;
+    memcpy(HIDReportEcho.ReportData, ReportData, ReportSize);
+
+    uint8_t n = HIDReportEcho.ReportData[4];
+    setRGB(HIDReportEcho.ReportData[0],HIDReportEcho.ReportData[1],HIDReportEcho.ReportData[2]);
+    switch( HIDReportEcho.ReportData[3] )
+    {
+        case 0:
+            on();
+            for( uint8_t i = 0; i < n; i++ )
+            {
+                _delay_ms( 1000 );
+            }
+            off();
+            break;
+        case 1:
+            blink( n );
+            break;
+        case 2:
+            fade( n );
+            break;
+    }        
 }
 
 

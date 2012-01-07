@@ -192,15 +192,15 @@
  202               	.LFE92:
  236               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Audio.c
-     /tmp/ccztzujR.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccztzujR.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccztzujR.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccztzujR.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccztzujR.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccztzujR.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccztzujR.s:19     .text.Audio_Device_ProcessControlRequest:00000000 Audio_Device_ProcessControlRequest
-     /tmp/ccztzujR.s:86     .text.Audio_Device_ConfigureEndpoints:00000000 Audio_Device_ConfigureEndpoints
+                            *ABS*:0000000000000000 Audio.c
+     /tmp/ccTqZXlC.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccTqZXlC.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccTqZXlC.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccTqZXlC.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccTqZXlC.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccTqZXlC.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccTqZXlC.s:19     .text.Audio_Device_ProcessControlRequest:0000000000000000 Audio_Device_ProcessControlRequest
+     /tmp/ccTqZXlC.s:86     .text.Audio_Device_ConfigureEndpoints:0000000000000000 Audio_Device_ConfigureEndpoints
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

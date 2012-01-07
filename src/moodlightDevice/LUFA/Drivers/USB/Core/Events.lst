@@ -37,21 +37,21 @@
   46               		.set	EVENT_USB_Device_StartOfFrame,USB_Event_Stub
   71               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Events.c
-     /tmp/ccgCArTp.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccgCArTp.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccgCArTp.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccgCArTp.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccgCArTp.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccgCArTp.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 USB_Event_Stub
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Connect
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Disconnect
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ControlRequest
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ConfigurationChanged
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Suspend
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_WakeUp
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Reset
-     /tmp/ccgCArTp.s:19     .text.USB_Event_Stub:00000000 EVENT_USB_Device_StartOfFrame
+                            *ABS*:0000000000000000 Events.c
+     /tmp/cca8NrNS.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/cca8NrNS.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/cca8NrNS.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/cca8NrNS.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/cca8NrNS.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cca8NrNS.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 USB_Event_Stub
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_Connect
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_Disconnect
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_ControlRequest
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_ConfigurationChanged
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_Suspend
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_WakeUp
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_Reset
+     /tmp/cca8NrNS.s:19     .text.USB_Event_Stub:0000000000000000 EVENT_USB_Device_StartOfFrame
 
 NO UNDEFINED SYMBOLS

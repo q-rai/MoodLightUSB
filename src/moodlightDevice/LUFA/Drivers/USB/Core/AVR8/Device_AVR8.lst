@@ -54,13 +54,13 @@
   62               	.LFE78:
   88               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Device_AVR8.c
-     /tmp/ccupPcQM.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccupPcQM.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccupPcQM.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccupPcQM.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccupPcQM.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccupPcQM.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccupPcQM.s:19     .text.USB_Device_SendRemoteWakeup:00000000 USB_Device_SendRemoteWakeup
+                            *ABS*:0000000000000000 Device_AVR8.c
+     /tmp/ccew3YZ9.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccew3YZ9.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccew3YZ9.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccew3YZ9.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccew3YZ9.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccew3YZ9.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccew3YZ9.s:19     .text.USB_Device_SendRemoteWakeup:0000000000000000 USB_Device_SendRemoteWakeup
 
 NO UNDEFINED SYMBOLS

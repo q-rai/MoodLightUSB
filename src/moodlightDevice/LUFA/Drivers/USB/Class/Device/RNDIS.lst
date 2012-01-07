@@ -1215,8 +1215,8 @@
  1227               	.LSM122:
  1228 003c DE01      		movw r26,r28
  1229 003e 1196      		adiw r26,1
- 1230 0040 E0E0      		ldi r30,lo8(C.4.4658)
- 1231 0042 F0E0      		ldi r31,hi8(C.4.4658)
+ 1230 0040 E0E0      		ldi r30,lo8(C.4.4688)
+ 1231 0042 F0E0      		ldi r31,hi8(C.4.4688)
  1232 0044 88E0      		ldi r24,lo8(8)
  1233               	.L71:
  1234 0046 0190      		ld r0,Z+
@@ -1615,7 +1615,7 @@
  1633 00dc 0895      		ret
  1634               	.LFE99:
  1636               		.data
- 1639               	C.4.4658:
+ 1639               	C.4.4688:
  1640 0000 A1        		.byte	-95
  1641 0001 01        		.byte	1
  1642 0002 0000      		.word	0
@@ -1733,21 +1733,21 @@
  1756 006b 01        		.byte	1
  1821               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 RNDIS.c
-     /tmp/ccLEHd6B.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccLEHd6B.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccLEHd6B.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccLEHd6B.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccLEHd6B.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccLEHd6B.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccLEHd6B.s:19     .text.RNDIS_Device_ProcessControlRequest:00000000 RNDIS_Device_ProcessControlRequest
-     /tmp/ccLEHd6B.s:1648   .progmem.data:00000000 AdapterSupportedOIDList
-     /tmp/ccLEHd6B.s:997    .text.RNDIS_Device_ConfigureEndpoints:00000000 RNDIS_Device_ConfigureEndpoints
-     /tmp/ccLEHd6B.s:1175   .text.RNDIS_Device_USBTask:00000000 RNDIS_Device_USBTask
-     /tmp/ccLEHd6B.s:1639   .data:00000000 C.4.4658
-     /tmp/ccLEHd6B.s:1281   .text.RNDIS_Device_IsPacketReceived:00000000 RNDIS_Device_IsPacketReceived
-     /tmp/ccLEHd6B.s:1337   .text.RNDIS_Device_ReadPacket:00000000 RNDIS_Device_ReadPacket
-     /tmp/ccLEHd6B.s:1484   .text.RNDIS_Device_SendPacket:00000000 RNDIS_Device_SendPacket
+                            *ABS*:0000000000000000 RNDIS.c
+     /tmp/ccGU9rFd.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccGU9rFd.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccGU9rFd.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccGU9rFd.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccGU9rFd.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccGU9rFd.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccGU9rFd.s:19     .text.RNDIS_Device_ProcessControlRequest:0000000000000000 RNDIS_Device_ProcessControlRequest
+     /tmp/ccGU9rFd.s:1648   .progmem.data:0000000000000000 AdapterSupportedOIDList
+     /tmp/ccGU9rFd.s:997    .text.RNDIS_Device_ConfigureEndpoints:0000000000000000 RNDIS_Device_ConfigureEndpoints
+     /tmp/ccGU9rFd.s:1175   .text.RNDIS_Device_USBTask:0000000000000000 RNDIS_Device_USBTask
+     /tmp/ccGU9rFd.s:1639   .data:0000000000000000 C.4.4688
+     /tmp/ccGU9rFd.s:1281   .text.RNDIS_Device_IsPacketReceived:0000000000000000 RNDIS_Device_IsPacketReceived
+     /tmp/ccGU9rFd.s:1337   .text.RNDIS_Device_ReadPacket:0000000000000000 RNDIS_Device_ReadPacket
+     /tmp/ccGU9rFd.s:1484   .text.RNDIS_Device_SendPacket:0000000000000000 RNDIS_Device_SendPacket
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

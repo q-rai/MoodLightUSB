@@ -8,12 +8,12 @@
   15               	.Ltext0:
   16               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Pipe_AVR8.c
-     /tmp/ccEeusi0.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccEeusi0.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccEeusi0.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccEeusi0.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccEeusi0.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccEeusi0.s:7      *ABS*:00000001 __zero_reg__
+                            *ABS*:0000000000000000 Pipe_AVR8.c
+     /tmp/ccYOH6No.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccYOH6No.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccYOH6No.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccYOH6No.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccYOH6No.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccYOH6No.s:7      *ABS*:0000000000000001 __zero_reg__
 
 NO UNDEFINED SYMBOLS

@@ -362,17 +362,17 @@
  376               	.LFE81:
  426               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 Endpoint_AVR8.c
-     /tmp/ccir0uPR.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccir0uPR.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccir0uPR.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccir0uPR.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccir0uPR.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccir0uPR.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccir0uPR.s:19     .text.Endpoint_ConfigureEndpoint_Prv:00000000 Endpoint_ConfigureEndpoint_Prv
-     /tmp/ccir0uPR.s:141    .text.Endpoint_ClearEndpoints:00000000 Endpoint_ClearEndpoints
-     /tmp/ccir0uPR.s:190    .text.Endpoint_ClearStatusStage:00000000 Endpoint_ClearStatusStage
-     /tmp/ccir0uPR.s:256    .text.Endpoint_WaitUntilReady:00000000 Endpoint_WaitUntilReady
+                            *ABS*:0000000000000000 Endpoint_AVR8.c
+     /tmp/cc8b48Gf.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/cc8b48Gf.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/cc8b48Gf.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/cc8b48Gf.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/cc8b48Gf.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc8b48Gf.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc8b48Gf.s:19     .text.Endpoint_ConfigureEndpoint_Prv:0000000000000000 Endpoint_ConfigureEndpoint_Prv
+     /tmp/cc8b48Gf.s:141    .text.Endpoint_ClearEndpoints:0000000000000000 Endpoint_ClearEndpoints
+     /tmp/cc8b48Gf.s:190    .text.Endpoint_ClearStatusStage:0000000000000000 Endpoint_ClearStatusStage
+     /tmp/cc8b48Gf.s:256    .text.Endpoint_WaitUntilReady:0000000000000000 Endpoint_WaitUntilReady
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

@@ -71,17 +71,17 @@
   80               		.comm USB_DeviceState,1,1
  105               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 USBTask.c
-     /tmp/cceUaaxs.s:2      *ABS*:0000003f __SREG__
-     /tmp/cceUaaxs.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cceUaaxs.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cceUaaxs.s:5      *ABS*:00000034 __CCP__
-     /tmp/cceUaaxs.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/cceUaaxs.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/cceUaaxs.s:19     .text.USB_USBTask:00000000 USB_USBTask
-                            *COM*:00000001 USB_DeviceState
-                            *COM*:00000001 USB_IsInitialized
-                            *COM*:00000008 USB_ControlRequest
+                            *ABS*:0000000000000000 USBTask.c
+     /tmp/ccHOZ4Xk.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccHOZ4Xk.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccHOZ4Xk.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccHOZ4Xk.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccHOZ4Xk.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccHOZ4Xk.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccHOZ4Xk.s:19     .text.USB_USBTask:0000000000000000 USB_USBTask
+                            *COM*:0000000000000001 USB_DeviceState
+                            *COM*:0000000000000001 USB_IsInitialized
+                            *COM*:0000000000000008 USB_ControlRequest
 
 UNDEFINED SYMBOLS
 USB_Device_ProcessControlRequest

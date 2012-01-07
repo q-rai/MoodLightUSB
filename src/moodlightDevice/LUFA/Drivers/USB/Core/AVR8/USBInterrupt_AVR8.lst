@@ -346,16 +346,16 @@
  358               	.LFE80:
  400               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 USBInterrupt_AVR8.c
-     /tmp/ccZ4Djfa.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccZ4Djfa.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccZ4Djfa.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccZ4Djfa.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccZ4Djfa.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccZ4Djfa.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccZ4Djfa.s:19     .text.USB_INT_DisableAllInterrupts:00000000 USB_INT_DisableAllInterrupts
-     /tmp/ccZ4Djfa.s:36     .text.USB_INT_ClearAllInterrupts:00000000 USB_INT_ClearAllInterrupts
-     /tmp/ccZ4Djfa.s:53     .text.__vector_11:00000000 __vector_11
+                            *ABS*:0000000000000000 USBInterrupt_AVR8.c
+     /tmp/ccUy3ZEx.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccUy3ZEx.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccUy3ZEx.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccUy3ZEx.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccUy3ZEx.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccUy3ZEx.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccUy3ZEx.s:19     .text.USB_INT_DisableAllInterrupts:0000000000000000 USB_INT_DisableAllInterrupts
+     /tmp/ccUy3ZEx.s:36     .text.USB_INT_ClearAllInterrupts:0000000000000000 USB_INT_ClearAllInterrupts
+     /tmp/ccUy3ZEx.s:53     .text.__vector_11:0000000000000000 __vector_11
 
 UNDEFINED SYMBOLS
 EVENT_USB_Device_StartOfFrame

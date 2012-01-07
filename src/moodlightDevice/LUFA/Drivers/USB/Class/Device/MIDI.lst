@@ -364,18 +364,18 @@
  380               	.LFE95:
  438               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 MIDI.c
-     /tmp/ccXyl6Bs.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccXyl6Bs.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccXyl6Bs.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccXyl6Bs.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccXyl6Bs.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccXyl6Bs.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccXyl6Bs.s:19     .text.MIDI_Device_ConfigureEndpoints:00000000 MIDI_Device_ConfigureEndpoints
-     /tmp/ccXyl6Bs.s:161    .text.MIDI_Device_SendEventPacket:00000000 MIDI_Device_SendEventPacket
-     /tmp/ccXyl6Bs.s:226    .text.MIDI_Device_Flush:00000000 MIDI_Device_Flush
-     /tmp/ccXyl6Bs.s:286    .text.MIDI_Device_USBTask:00000000 MIDI_Device_USBTask
-     /tmp/ccXyl6Bs.s:308    .text.MIDI_Device_ReceiveEventPacket:00000000 MIDI_Device_ReceiveEventPacket
+                            *ABS*:0000000000000000 MIDI.c
+     /tmp/ccSJVfn8.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccSJVfn8.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccSJVfn8.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccSJVfn8.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccSJVfn8.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccSJVfn8.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccSJVfn8.s:19     .text.MIDI_Device_ConfigureEndpoints:0000000000000000 MIDI_Device_ConfigureEndpoints
+     /tmp/ccSJVfn8.s:161    .text.MIDI_Device_SendEventPacket:0000000000000000 MIDI_Device_SendEventPacket
+     /tmp/ccSJVfn8.s:226    .text.MIDI_Device_Flush:0000000000000000 MIDI_Device_Flush
+     /tmp/ccSJVfn8.s:286    .text.MIDI_Device_USBTask:0000000000000000 MIDI_Device_USBTask
+     /tmp/ccSJVfn8.s:308    .text.MIDI_Device_ReceiveEventPacket:0000000000000000 MIDI_Device_ReceiveEventPacket
 
 UNDEFINED SYMBOLS
 Endpoint_ConfigureEndpoint_Prv

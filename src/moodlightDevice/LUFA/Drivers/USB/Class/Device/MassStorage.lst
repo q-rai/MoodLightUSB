@@ -732,16 +732,16 @@
  744               	.LFE93:
  786               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 MassStorage.c
-     /tmp/ccCpqQrn.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccCpqQrn.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccCpqQrn.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccCpqQrn.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccCpqQrn.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccCpqQrn.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccCpqQrn.s:19     .text.MS_Device_ProcessControlRequest:00000000 MS_Device_ProcessControlRequest
-     /tmp/ccCpqQrn.s:119    .text.MS_Device_ConfigureEndpoints:00000000 MS_Device_ConfigureEndpoints
-     /tmp/ccCpqQrn.s:270    .text.MS_Device_USBTask:00000000 MS_Device_USBTask
+                            *ABS*:0000000000000000 MassStorage.c
+     /tmp/ccZ6ToA5.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccZ6ToA5.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccZ6ToA5.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccZ6ToA5.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccZ6ToA5.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccZ6ToA5.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccZ6ToA5.s:19     .text.MS_Device_ProcessControlRequest:0000000000000000 MS_Device_ProcessControlRequest
+     /tmp/ccZ6ToA5.s:119    .text.MS_Device_ConfigureEndpoints:0000000000000000 MS_Device_ConfigureEndpoints
+     /tmp/ccZ6ToA5.s:270    .text.MS_Device_USBTask:0000000000000000 MS_Device_USBTask
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

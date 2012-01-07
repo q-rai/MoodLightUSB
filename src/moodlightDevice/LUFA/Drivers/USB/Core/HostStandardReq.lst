@@ -8,12 +8,12 @@
   15               	.Ltext0:
   16               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 HostStandardReq.c
-     /tmp/ccVbrwmn.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccVbrwmn.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccVbrwmn.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccVbrwmn.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccVbrwmn.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccVbrwmn.s:7      *ABS*:00000001 __zero_reg__
+                            *ABS*:0000000000000000 HostStandardReq.c
+     /tmp/ccVjFANe.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccVjFANe.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccVjFANe.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccVjFANe.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccVjFANe.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccVjFANe.s:7      *ABS*:0000000000000001 __zero_reg__
 
 NO UNDEFINED SYMBOLS

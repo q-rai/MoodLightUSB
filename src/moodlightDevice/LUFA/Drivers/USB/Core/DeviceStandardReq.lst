@@ -732,17 +732,17 @@
  741               		.comm USB_CurrentlySelfPowered,1,1
  766               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 DeviceStandardReq.c
-     /tmp/cc8tWdSo.s:2      *ABS*:0000003f __SREG__
-     /tmp/cc8tWdSo.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cc8tWdSo.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cc8tWdSo.s:5      *ABS*:00000034 __CCP__
-     /tmp/cc8tWdSo.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/cc8tWdSo.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/cc8tWdSo.s:19     .text.USB_Device_ProcessControlRequest:00000000 USB_Device_ProcessControlRequest
-                            *COM*:00000001 USB_CurrentlySelfPowered
-                            *COM*:00000001 USB_RemoteWakeupEnabled
-                            *COM*:00000001 USB_ConfigurationNumber
+                            *ABS*:0000000000000000 DeviceStandardReq.c
+     /tmp/ccgYLPLJ.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccgYLPLJ.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccgYLPLJ.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccgYLPLJ.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccgYLPLJ.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccgYLPLJ.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccgYLPLJ.s:19     .text.USB_Device_ProcessControlRequest:0000000000000000 USB_Device_ProcessControlRequest
+                            *COM*:0000000000000001 USB_CurrentlySelfPowered
+                            *COM*:0000000000000001 USB_RemoteWakeupEnabled
+                            *COM*:0000000000000001 USB_ConfigurationNumber
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

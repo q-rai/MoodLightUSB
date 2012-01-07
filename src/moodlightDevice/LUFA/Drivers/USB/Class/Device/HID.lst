@@ -786,16 +786,16 @@
  798               	.LFE93:
  840               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 HID.c
-     /tmp/cch4dclb.s:2      *ABS*:0000003f __SREG__
-     /tmp/cch4dclb.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cch4dclb.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cch4dclb.s:5      *ABS*:00000034 __CCP__
-     /tmp/cch4dclb.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/cch4dclb.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/cch4dclb.s:19     .text.HID_Device_ProcessControlRequest:00000000 HID_Device_ProcessControlRequest
-     /tmp/cch4dclb.s:434    .text.HID_Device_ConfigureEndpoints:00000000 HID_Device_ConfigureEndpoints
-     /tmp/cch4dclb.s:529    .text.HID_Device_USBTask:00000000 HID_Device_USBTask
+                            *ABS*:0000000000000000 HID.c
+     /tmp/ccddKc2V.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccddKc2V.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccddKc2V.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccddKc2V.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccddKc2V.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccddKc2V.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccddKc2V.s:19     .text.HID_Device_ProcessControlRequest:0000000000000000 HID_Device_ProcessControlRequest
+     /tmp/ccddKc2V.s:434    .text.HID_Device_ConfigureEndpoints:0000000000000000 HID_Device_ConfigureEndpoints
+     /tmp/ccddKc2V.s:529    .text.HID_Device_USBTask:0000000000000000 HID_Device_USBTask
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

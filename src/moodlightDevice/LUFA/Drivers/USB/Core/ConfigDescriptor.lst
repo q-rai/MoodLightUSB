@@ -314,16 +314,16 @@
  328               	.LFE82:
  378               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:00000000 ConfigDescriptor.c
-     /tmp/ccTt51Dh.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccTt51Dh.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccTt51Dh.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccTt51Dh.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccTt51Dh.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccTt51Dh.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccTt51Dh.s:19     .text.USB_GetNextDescriptorOfType:00000000 USB_GetNextDescriptorOfType
-     /tmp/ccTt51Dh.s:91     .text.USB_GetNextDescriptorOfTypeBefore:00000000 USB_GetNextDescriptorOfTypeBefore
-     /tmp/ccTt51Dh.s:171    .text.USB_GetNextDescriptorOfTypeAfter:00000000 USB_GetNextDescriptorOfTypeAfter
-     /tmp/ccTt51Dh.s:219    .text.USB_GetNextDescriptorComp:00000000 USB_GetNextDescriptorComp
+                            *ABS*:0000000000000000 ConfigDescriptor.c
+     /tmp/ccakJQhB.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccakJQhB.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccakJQhB.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccakJQhB.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccakJQhB.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccakJQhB.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccakJQhB.s:19     .text.USB_GetNextDescriptorOfType:0000000000000000 USB_GetNextDescriptorOfType
+     /tmp/ccakJQhB.s:91     .text.USB_GetNextDescriptorOfTypeBefore:0000000000000000 USB_GetNextDescriptorOfTypeBefore
+     /tmp/ccakJQhB.s:171    .text.USB_GetNextDescriptorOfTypeAfter:0000000000000000 USB_GetNextDescriptorOfTypeAfter
+     /tmp/ccakJQhB.s:219    .text.USB_GetNextDescriptorComp:0000000000000000 USB_GetNextDescriptorComp
 
 NO UNDEFINED SYMBOLS
