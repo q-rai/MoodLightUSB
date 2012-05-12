@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2010-03-14)-final date = Sun Jul 24 11:42:18 2011
+Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = Sun 25 Mar 2012 23:41:02 CEST
 
 BeginCmp
 TimeStamp = /4E2744B3;
@@ -11,13 +11,6 @@ BeginCmp
 TimeStamp = /4E2744A8;
 Reference = C2;
 ValeurCmp = 0u1;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E25F39F;
-Reference = C3;
-ValeurCmp = 18p;
 IdModule  = SM1206;
 EndCmp
 
@@ -43,24 +36,38 @@ IdModule  = SM1206;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E25F3AB;
-Reference = C7;
-ValeurCmp = 18p;
-IdModule  = SM1206;
+TimeStamp = /4F6F87D7;
+Reference = D1;
+ValeurCmp = IMPOLUX_RGB_SMD;
+IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E25F73D;
-Reference = CR1;
-ValeurCmp = ESD_Zener;
-IdModule  = SM0603;
+TimeStamp = /4F6F88EF;
+Reference = D2;
+ValeurCmp = IMPOLUX_RGB_SMD;
+IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E25F742;
-Reference = CR2;
-ValeurCmp = ESD_Zener;
-IdModule  = SM0603;
+TimeStamp = /4F6F8925;
+Reference = D3;
+ValeurCmp = IMPOLUX_RGB_SMD;
+IdModule  = MADW__impolux_rgb_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6F897C;
+Reference = D4;
+ValeurCmp = IMPOLUX_RGB_SMD;
+IdModule  = MADW__impolux_rgb_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6F8DFD;
+Reference = ESD1;
+ValeurCmp = ESD_TWO-LINE;
+IdModule  = SOT23EBC;
 EndCmp
 
 BeginCmp
@@ -68,48 +75,6 @@ TimeStamp = /4E25E2C9;
 Reference = IC1;
 ValeurCmp = AT90USB16;
 IdModule  = TQFP32;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E27319D;
-Reference = LED1;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7CE;
-Reference = LED2;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7C2;
-Reference = LED3;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7EE;
-Reference = LED4;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E0;
-Reference = LED5;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E5;
-Reference = LED6;
-ValeurCmp = LED_RCBG;
-IdModule  = LED5_RGB;
 EndCmp
 
 BeginCmp
@@ -192,14 +157,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4E2BE6A8;
 Reference = R9;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /4E2BE554;
 Reference = R10;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
@@ -213,14 +178,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4E2BE7CB;
 Reference = R12;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /4E2BE7CC;
 Reference = R13;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
@@ -234,14 +199,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4E2BE7BF;
 Reference = R15;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /4E2BE7C0;
 Reference = R16;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
@@ -255,56 +220,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4E2BE7EB;
 Reference = R18;
-ValeurCmp = 91;
+ValeurCmp = 100;
 IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /4E2BE7EC;
 Reference = R19;
-ValeurCmp = 91;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E1;
-Reference = R20;
 ValeurCmp = 100;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E3;
-Reference = R21;
-ValeurCmp = 91;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E2;
-Reference = R22;
-ValeurCmp = 91;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E6;
-Reference = R23;
-ValeurCmp = 100;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E8;
-Reference = R24;
-ValeurCmp = 91;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E2BE7E7;
-Reference = R25;
-ValeurCmp = 91;
 IdModule  = SM1206;
 EndCmp
 
@@ -327,13 +250,6 @@ TimeStamp = /4E25F586;
 Reference = U1;
 ValeurCmp = USBCONN;
 IdModule  = CONN_USB2_MiniB_SMT;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E25F325;
-Reference = X1;
-ValeurCmp = 16MHz;
-IdModule  = HC49-US_Minimized;
 EndCmp
 
 EndListe

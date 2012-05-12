@@ -1,28 +1,53 @@
-# EESchema Netlist Version 1.1 created  Sun Jul 24 22:16:40 2011
+# EESchema Netlist Version 1.1 created  Mon 26 Mar 2012 02:17:44 CEST
 (
- ( /4E2BE7EE $noname  LED4 LED_RCBG {Lib=LED_RCBG}
-  (    1 N-000044 )
+ ( /4F6F8DFD $noname  ESD1 ESD_TWO-LINE {Lib=ESD_TWO-LINE}
+  (    1 N-000041 )
+  (    2 N-000040 )
+  (    3 GND )
+ )
+ ( /4F6F897C $noname  D4 IMPOLUX_RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 GND )
   (    2 GND )
-  (    3 N-000043 )
-  (    4 N-000042 )
+  (    3 GND )
+  (    4 N-000044 )
+  (    5 N-000043 )
+  (    6 N-000042 )
+ )
+ ( /4F6F8925 $noname  D3 IMPOLUX_RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 GND )
+  (    2 GND )
+  (    3 GND )
+  (    4 N-000020 )
+  (    5 N-000022 )
+  (    6 N-000021 )
+ )
+ ( /4F6F88EF $noname  D2 IMPOLUX_RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 GND )
+  (    2 GND )
+  (    3 GND )
+  (    4 N-000049 )
+  (    5 N-000048 )
+  (    6 N-000047 )
+ )
+ ( /4F6F87D7 $noname  D1 IMPOLUX_RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 GND )
+  (    2 GND )
+  (    3 GND )
+  (    4 N-000046 )
+  (    5 N-000012 )
+  (    6 N-000045 )
  )
  ( /4E2BE7ED $noname  R17 100 {Lib=R}
   (    1 /R )
-  (    2 N-000044 )
+  (    2 N-000043 )
  )
  ( /4E2BE7EC $noname  R19 100 {Lib=R}
   (    1 /B )
-  (    2 N-000043 )
+  (    2 N-000042 )
  )
  ( /4E2BE7EB $noname  R18 100 {Lib=R}
   (    1 /G )
-  (    2 N-000042 )
- )
- ( /4E2BE7CE $noname  LED2 LED_RCBG {Lib=LED_RCBG}
-  (    1 N-000048 )
-  (    2 GND )
-  (    3 N-000050 )
-  (    4 N-000049 )
+  (    2 N-000044 )
  )
  ( /4E2BE7CD $noname  R11 100 {Lib=R}
   (    1 /R )
@@ -30,37 +55,31 @@
  )
  ( /4E2BE7CC $noname  R13 100 {Lib=R}
   (    1 /B )
-  (    2 N-000050 )
+  (    2 N-000047 )
  )
  ( /4E2BE7CB $noname  R12 100 {Lib=R}
   (    1 /G )
   (    2 N-000049 )
  )
- ( /4E2BE7C2 $noname  LED3 LED_RCBG {Lib=LED_RCBG}
-  (    1 N-000047 )
-  (    2 GND )
-  (    3 N-000046 )
-  (    4 N-000045 )
- )
  ( /4E2BE7C1 $noname  R14 100 {Lib=R}
   (    1 /R )
-  (    2 N-000047 )
+  (    2 N-000022 )
  )
  ( /4E2BE7C0 $noname  R16 100 {Lib=R}
   (    1 /B )
-  (    2 N-000046 )
+  (    2 N-000021 )
  )
  ( /4E2BE7BF $noname  R15 100 {Lib=R}
   (    1 /G )
-  (    2 N-000045 )
+  (    2 N-000020 )
  )
  ( /4E2BE6A8 $noname  R9 100 {Lib=R}
   (    1 /G )
-  (    2 N-000014 )
+  (    2 N-000046 )
  )
  ( /4E2BE554 $noname  R10 100 {Lib=R}
   (    1 /B )
-  (    2 N-000026 )
+  (    2 N-000045 )
  )
  ( /4E2744B3 $noname  C1 0u1 {Lib=C_MINI}
   (    1 VCC )
@@ -72,94 +91,68 @@
  )
  ( /4E274066 $noname  R8 100 {Lib=R}
   (    1 /R )
-  (    2 N-000009 )
+  (    2 N-000012 )
  )
  ( /4E273228 TO92-EBC  Q3 BC847C {Lib=BC237}
-  (    B N-000011 )
+  (    B N-000035 )
   (    C VCC )
   (    E /B )
  )
  ( /4E273223 TO92-EBC  Q2 BC847C {Lib=BC237}
-  (    B N-000013 )
+  (    B N-000033 )
   (    C VCC )
   (    E /G )
  )
  ( /4E27321E TO92-EBC  Q1 BC847C {Lib=BC237}
-  (    B N-000012 )
+  (    B N-000036 )
   (    C VCC )
   (    E /R )
  )
  ( /4E2731FA $noname  R7 1k {Lib=R}
   (    1 /LED_B )
-  (    2 N-000011 )
+  (    2 N-000035 )
  )
  ( /4E2731F6 $noname  R5 1k {Lib=R}
   (    1 /LED_R )
-  (    2 N-000012 )
+  (    2 N-000036 )
  )
  ( /4E2731EB $noname  R6 1k {Lib=R}
   (    1 /LED_G )
-  (    2 N-000013 )
- )
- ( /4E27319D $noname  LED1 LED_RCBG {Lib=LED_RCBG}
-  (    1 N-000009 )
-  (    2 GND )
-  (    3 N-000026 )
-  (    4 N-000014 )
+  (    2 N-000033 )
  )
  ( /4E25FAFB $noname  R1 47k {Lib=R}
   (    1 VCC )
-  (    2 N-000036 )
+  (    2 N-000034 )
  )
  ( /4E25FAB6 $noname  SW1 SWITCH_PUSHBUTTON {Lib=SWITCH_PUSHBUTTON}
   (    1 GND )
-  (    2 N-000036 )
+  (    2 N-000034 )
  )
  ( /4E25F963 $noname  SW2 SWITCH_PUSHBUTTON {Lib=SWITCH_PUSHBUTTON}
   (    1 GND )
-  (    2 N-000040 )
+  (    2 N-000039 )
  )
  ( /4E25F908 $noname  R4 47k {Lib=R}
-  (    1 N-000040 )
+  (    1 N-000039 )
   (    2 VCC )
  )
- ( /4E25F742 $noname  CR2 ESD_Zener {Lib=ESD_Zener}
-  (    1 GNDPWR )
-  (    2 N-000034 )
- )
- ( /4E25F73D $noname  CR1 ESD_Zener {Lib=ESD_Zener}
-  (    1 GNDPWR )
-  (    2 N-000033 )
- )
  ( /4E25F64E $noname  R3 22 {Lib=R}
-  (    1 N-000034 )
+  (    1 N-000040 )
   (    2 N-000038 )
  )
  ( /4E25F619 $noname  R2 22 {Lib=R}
   (    1 N-000037 )
-  (    2 N-000033 )
+  (    2 N-000041 )
  )
  ( /4E25F586 $noname  U1 USBCONN {Lib=USBCONN}
   (    1 VCC )
-  (    2 N-000034 )
-  (    3 N-000033 )
+  (    2 N-000040 )
+  (    3 N-000041 )
   (    4 GND )
-  (    5 GNDPWR )
- )
- ( /4E25F3AB $noname  C7 18p {Lib=C_MINI}
-  (    1 GND )
-  (    2 N-000041 )
- )
- ( /4E25F39F $noname  C3 18p {Lib=C_MINI}
-  (    1 GND )
-  (    2 N-000039 )
- )
- ( /4E25F325 $noname  X1 16MHz {Lib=CRYSTAL}
-  (    1 N-000039 )
-  (    2 N-000041 )
+  (    5 GND )
  )
  ( /4E25F070 $noname  C4 1u0 {Lib=C_MINI}
-  (    1 N-000029 )
+  (    1 N-000028 )
   (    2 GND )
  )
  ( /4E25F06B $noname  C5 0u1 {Lib=C_MINI}
@@ -171,8 +164,8 @@
   (    2 GND )
  )
  ( /4E25E2C9 TQFP32-QFN32  IC1 AT90USB16 {Lib=AT90USB16}
-  (    1 N-000041 )
-  (    2 N-000039 )
+  (    1 ? )
+  (    2 ? )
   (    3 GND )
   (    4 VCC )
   (    5 ? )
@@ -183,21 +176,21 @@
   (   10 ? )
   (   11 ? )
   (   12 ? )
-  (   13 N-000040 )
+  (   13 N-000039 )
   (   14 ? )
   (   15 ? )
   (   16 ? )
   (   17 ? )
   (   18 ? )
-  (   19 /LED_G )
-  (   20 /LED_B )
+  (   19 ? )
+  (   20 ? )
   (   21 /LED_R )
   (   22 ? )
-  (   23 ? )
-  (   24 N-000036 )
-  (   25 ? )
+  (   23 /LED_G )
+  (   24 N-000034 )
+  (   25 /LED_B )
   (   26 ? )
-  (   27 N-000029 )
+  (   27 N-000028 )
   (   28 GND )
   (   29 N-000037 )
   (   30 N-000038 )
@@ -334,162 +327,142 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 8 "GND" "GND"
- U1 4
- C2 2
- C4 2
- IC1 28
- C5 2
- IC1 33
- C6 2
- IC1 3
- SW2 1
- SW1 1
- C3 1
- C1 2
- C7 1
- LED4 2
- LED4 2
- LED3 2
- LED1 2
- LED1 2
- LED3 2
- LED2 2
- LED2 2
-Net 9 "" ""
- R8 2
- LED1 1
- LED1 1
-Net 10 "/LED_R" "LED_R"
- R5 1
- IC1 21
-Net 11 "" ""
- Q3 B
- R7 2
-Net 12 "" ""
- R5 2
- Q1 B
-Net 13 "" ""
- Q2 B
- R6 2
-Net 14 "" ""
- LED1 4
- R9 2
- LED1 4
-Net 15 "/R" "R"
- R8 1
- R11 1
- R14 1
- R17 1
- Q1 E
-Net 16 "/G" "G"
- R9 1
- Q2 E
- R18 1
- R15 1
- R12 1
-Net 17 "/B" "B"
- R19 1
- R16 1
- R13 1
- R10 1
- Q3 E
-Net 25 "VCC" "VCC"
- IC1 4
- Q1 C
- Q3 C
- R4 2
- C5 1
- Q2 C
+Net 10 "VCC" "VCC"
+ IC1 31
+ C6 1
  IC1 32
- U1 1
+ C5 1
+ IC1 4
  C2 1
  C1 1
- IC1 31
+ U1 1
+ Q2 C
+ Q1 C
+ Q3 C
  R1 1
- C6 1
-Net 26 "" ""
- LED1 3
- R10 2
- LED1 3
-Net 28 "/LED_G" "LED_G"
- IC1 19
- R6 1
-Net 29 "" ""
+ R4 2
+Net 11 "GND" "GND"
+ U1 4
+ SW2 1
+ U1 5
+ D2 3
+ D2 2
+ D2 1
+ ESD1 3
+ D3 3
+ D3 2
+ D3 1
+ D4 3
+ D4 2
+ D4 1
+ D1 1
+ D1 3
+ D1 2
+ SW1 1
+ IC1 33
+ IC1 28
+ C4 2
+ C5 2
+ IC1 3
+ C6 2
+ C1 2
+ C2 2
+Net 12 "" ""
+ R8 2
+ D1 5
+Net 17 "/G" "G"
+ R15 1
+ R12 1
+ R18 1
+ R9 1
+ Q2 E
+Net 18 "/R" "R"
+ R8 1
+ R11 1
+ R17 1
+ R14 1
+ Q1 E
+Net 19 "/B" "B"
+ R16 1
+ Q3 E
+ R19 1
+ R10 1
+ R13 1
+Net 20 "" ""
+ D3 4
+ R15 2
+Net 21 "" ""
+ R16 2
+ D3 6
+Net 22 "" ""
+ D3 5
+ R14 2
+Net 28 "" ""
  IC1 27
  C4 1
-Net 32 "/LED_B" "LED_B"
- IC1 20
+Net 30 "/LED_B" "LED_B"
+ IC1 25
  R7 1
+Net 31 "/LED_G" "LED_G"
+ IC1 23
+ R6 1
+Net 32 "/LED_R" "LED_R"
+ R5 1
+ IC1 21
 Net 33 "" ""
- U1 3
- CR1 2
- R2 2
+ Q2 B
+ R6 2
 Net 34 "" ""
- U1 2
- CR2 2
- R3 1
-Net 35 "GNDPWR" "GNDPWR"
- CR1 1
- U1 5
- CR2 1
-Net 36 "" ""
- SW1 2
  R1 2
+ SW1 2
  IC1 24
+Net 35 "" ""
+ R7 2
+ Q3 B
+Net 36 "" ""
+ R5 2
+ Q1 B
 Net 37 "" ""
- R2 1
  IC1 29
+ R2 1
 Net 38 "" ""
- IC1 30
  R3 2
+ IC1 30
 Net 39 "" ""
- IC1 2
- C3 2
- X1 1
-Net 40 "" ""
+ IC1 13
  R4 1
  SW2 2
- IC1 13
+Net 40 "" ""
+ R3 1
+ ESD1 2
+ U1 2
 Net 41 "" ""
- IC1 1
- C7 2
- X1 2
+ U1 3
+ R2 2
+ ESD1 1
 Net 42 "" ""
- R18 2
- LED4 4
- LED4 4
-Net 43 "" ""
- LED4 3
  R19 2
- LED4 3
-Net 44 "" ""
+ D4 6
+Net 43 "" ""
  R17 2
- LED4 1
- LED4 1
+ D4 5
+Net 44 "" ""
+ R18 2
+ D4 4
 Net 45 "" ""
- LED3 4
- LED3 4
- R15 2
+ D1 6
+ R10 2
 Net 46 "" ""
- LED3 3
- LED3 3
- R16 2
+ R9 2
+ D1 4
 Net 47 "" ""
- LED3 1
- LED3 1
- R14 2
+ R13 2
+ D2 6
 Net 48 "" ""
  R11 2
- LED2 1
- LED2 1
+ D2 5
 Net 49 "" ""
  R12 2
- LED2 4
- LED2 4
-Net 50 "" ""
- R13 2
- LED2 3
- LED2 3
+ D2 4
 }
 #End
