@@ -39,7 +39,7 @@
 /** Buffer to hold the previously generated HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevHIDReportBuffer[GENERIC_REPORT_SIZE];
 /** RGB colour codes */
-uint8_t red, green, blue;
+uint16_t red, green, blue;
 
 /** Structure to contain reports from the host, so that they can be echoed back upon request */
 static struct
@@ -174,9 +174,9 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
  */
 void setRGB( uint8_t r, uint8_t g, uint8_t b )
 {
-    red = r;
-    green = g;
-    blue = b;
+    red = r * 4;
+    green = g * 4;
+    blue = b * 4;
 }
 
 /**
@@ -224,7 +224,7 @@ void fade( uint8_t n )
 {
     // use relative step sizes for each colour channel
     int32_t rStep, gStep, bStep, scale;
-    scale = 48;
+    scale = 48 * 4;
     rStep = red / scale;
     gStep = green / scale;
     bStep = blue / scale;
@@ -244,7 +244,7 @@ void fade( uint8_t n )
             _delay_ms(10);
         }
         // fade out to black
-        while( OCR1A > 0 || OCR1B > 0 || OCR1C > 0 )
+        while( OCR1A > bStep || OCR1B > gStep || OCR1C > rStep )
         {
             if( OCR1A >= bStep )
                 OCR1A -= bStep;
@@ -255,6 +255,7 @@ void fade( uint8_t n )
             _delay_ms(10);
         }
     }
+    off();
 }
 
 /**
@@ -291,13 +292,35 @@ void fadeSimple( uint8_t n )
     }
 }
 
+void demo( uint8_t n )
+{
+    for( uint8_t i = 0; i < n; i++)
+    {
+	setRGB( 0xff, 0, 0 );
+        fade(1);
+        setRGB( 0xff, 0xff, 0 );
+        fade(1);
+        setRGB( 0, 0xff, 0 );
+        fade(1);
+        setRGB( 0, 0xff, 0xff );
+        fade(1);
+        setRGB( 0, 0, 0xff );
+        fade(1);
+        setRGB( 0xff, 0, 0xff );
+        fade(1);
+    }
+}
+
 /** HID class driver callback function for the processing of HID reports from the host.
+ *
+ *  Function call:
+ *  [sudo] ./HidCom -s8 -d5 00 00 00 ff 01
  *
  *  \param[in] HIDInterfaceInfo  Pointer to the HID class interface configuration structure being referenced
  *  \param[in] ReportID    Report ID of the received report from the host
  *  \param[in] ReportType  The type of report that the host has sent, either HID_REPORT_ITEM_Out or HID_REPORT_ITEM_Feature
  *  \param[in] ReportData  Pointer to a buffer where the created report has been stored
- *  [0] = r, [1] = g, [2] = b; [3] = mode (0 glow, 1 blink, 2 fade), [4] = duration (in seconds/number of blinks)
+ *  [0] = r, [1] = g, [2] = b; [3] = mode (0 glow, 1 blink, 2 fade, ff demo), [4] = duration (in seconds/number of blinks)
  *  \param[in] ReportSize  Size in bytes of the received HID report
  */
 void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
@@ -327,6 +350,9 @@ void CALLBACK_HID_Device_ProcessHIDReport(USB_ClassInfo_HID_Device_t* const HIDI
             break;
         case 2:
             fade( n );
+            break;
+        case 0xff:
+            demo( n );
             break;
     }        
 }
