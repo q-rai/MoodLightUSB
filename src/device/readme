@@ -1,0 +1,16 @@
+How to use your Moodlight in 6 easy steps
+
+1. Compile the software:
+	make
+
+2. Set your Moodlight to programming mode by holding the HWB button and pressing the RESET button.
+
+3. Erase the old binary from your Moodlight (may require root privilege):
+	dfu-programmer atmega32u2 erase
+
+4. Flash the new binary onto your Moodlight (may require root privilege):
+	dfu-programmer atmega32u2 flash Moodlight.hex 
+
+5. Reset your Moodlight by pressing the RESET button.
+
+6. Tell your Moodlight to blink for you (see readme in ../host/HidCom)	

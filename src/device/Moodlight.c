@@ -83,7 +83,7 @@ int main(void)
 	{
 		HID_Device_USBTask(&Generic_HID_Interface);
 		USB_USBTask();
-        demo(1); // demo forever!
+        // demo(1); // demo forever!
 	}
 }
 
