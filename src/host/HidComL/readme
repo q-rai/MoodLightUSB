@@ -1,0 +1,32 @@
+HidCom, does the communication between the PC and an the Moodlight device.
+For more information see http://openprog.altervista.org/
+These sources are given free of charge under the GNU General Public License version 2 
+
+How to compile:
+gcc HidCom.cpp -o HidCom
+
+Usage:
+./HidCom -v 03eb -p 204f -s 5 <red> <green> <blue> <mode> <n>
+	* 03eb and 204f are the vendor and product id of your Moodlight
+	* <mode> sets what your Moodlight should do with the colour
+		* 00 glows constantly for <n> seconds
+		* 01 blinks <n> times
+		* 02 fades <n> times
+		* ff is demo mode: it fades through 6 different colours (red, orange, yellow, green, cyan, blue, magenta) <n> times 
+	* <n> is the "duration (in seconds/number of turns)"
+	* "-s 5" is required to set the "report size" - which appeares to be to long by default
+
+Examples:
+	Blink red for 1 second
+	./HidCom -v 03eb -p 204f -s  6 ff 00 00 00 01
+	
+	Fade in green three times
+	./HidCom -v 03eb -p 204f -s 5 00 ff 00 02 03
+
+	Run through the demo program twice
+	(note that the colour you give HidCom doesn't matter here)
+	./HidCom -v 03eb -p 204f -s 5 00 00 00 ff 02
+
+
+Troubleshooting:
+* Depending on your system, you may require root privilege to run HidCom.
