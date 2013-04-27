@@ -3,7 +3,17 @@ For more information see http://openprog.altervista.org/
 These sources are given free of charge under the GNU General Public License version 2 
 
 How to compile:
-gcc HidCOm.cpp -o HidCom
+gcc HidCom.cpp -o HidCom
+
+Usage:
+HidCom -v 03eb -p 204f -s 5 <red> <green> <blue> <mode> <n>
+	* 03eb and 204f are the vendor and product id of your moodlight
+	* <n> is the "duration (in seconds/number of blinks)"
+	* "-s 5" is required to limit the "report size" - which appeares to be to long by default
 
 Example:
-HidCOm --pid 4D8 --vid 1FF --info 0 1 2 3 12 15 1a 1c 1f 4
+	Blink red for 1 second
+	HidCom -v 03eb -p 204f -s  6 ff 00 00 00 01
+	
+	Fade in green for 3 seconds
+	./HidCom -v 03eb -p 204f -s 5 00 ff 00 02 03
